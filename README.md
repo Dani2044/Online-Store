@@ -4,6 +4,7 @@
 
 ## Features
 
+- **GitHub Page**: [https://dani2044.github.io/Online-Store/html/index.html](https://dani2044.github.io/Online-Store/html/index.html)
 - **Shop Section**: Browse a wide selection of games, consoles, and accessories.
 - **Shopping Cart**: Add items to your cart, view the cart, and clear it when needed.
 - **Stock Management**: Real-time stock updates when items are added to the cart.
