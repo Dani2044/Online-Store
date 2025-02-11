@@ -1,0 +1,257 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Menu Bar */
+.menu_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.menu_bar h1 {
+    color: white;
+}
+
+/* Cart Container */
+.cart-container {
+    position: relative;
+}
+
+/* Cart Dropdown */
+.cart-dropdown {
+    color: black;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    z-index: 1000;
+    width: 320px; /* Fixed width to ensure it fits */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 5px; /* Rounded corners for better UI */
+}
+
+.cart-dropdown table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.cart-dropdown th, .cart-dropdown td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: white;
+}
+
+.cart-dropdown img {
+    width: 50px;
+    height: auto;
+}
+
+.cart-dropdown button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cart-dropdown button:hover {
+    background-color: darkred;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 110px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    flex: 1;
+}
+
+/* Shop Description */
+.shop_description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.shop_description p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    flex: 1;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px 0 0 10px;
+    margin-right: 15px;
+}
+
+.shop_description img {
+    flex: 1;
+    max-width: 100%;
+    height: 250px;
+    background: #ccc;
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+}
+
+/* Shop Section */
+.shop {
+    margin-top: 2rem;
+}
+
+/* Item List */
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33.333% - 20px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-top: 1rem;
+}
+
+.item-card img {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the add item section */
+.add-item {
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styles for the form */
+#add-item-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+#add-item-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Input fields */
+#add-item-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styled placeholder */
+#add-item-form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit button */
+#add-item-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-item-form button:hover {
+    background: #0056b3;
+}
