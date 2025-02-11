@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NintenShop.com</title>
+    <meta
+      name="description"
+      content="Buy your favorite Nintendo products at Nintenshop.com"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/header_footer.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="menu_bar">
+        <img
+          class="special_image"
+          src="../images/shop_icon.png"
+          height="50"
+          width="50"
+          alt="NintenShop.com"
+        />
+        <h1>NintenShop.com</h1>
+        <div class="cart-container">
+          <img
+            id="cart-icon"
+            src="../images/shopping_cart.png"
+            height="50"
+            width="50"
+            alt="shopping_cart"
+          />
+          <div id="cart-dropdown" class="cart-dropdown">
+            <table id="cart-items">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Cart items will be dynamically inserted here -->
+              </tbody>
+            </table>
+            <button id="clear-cart">Clear Cart</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Shop Description -->
+      <section class="shop_description">
+        <div class="text">
+          <p>
+            NintenShop is an online video game store specializing in digital and
+            physical games, consoles, and accessories. With a sleek and
+            user-friendly interface, it offers a wide selection of classic and
+            modern titles, exclusive deals, and fast delivery options. Whether
+            you're a casual gamer or a hardcore enthusiast, NintenShop is your
+            go-to destination for everything gaming.
+          </p>
+        </div>
+        <img
+          src="../images/shop_photo.jpg"
+          height="200"
+          width="250"
+          alt="shop_photo"
+        />
+      </section>
+
+      <!-- Shop Section -->
+      <section class="shop">
+        <h2>Shop</h2>
+        <div id="item-list" class="item-list">
+          <!-- Items will be dynamically inserted here -->
+        </div>
+        <br />
+      </section>
+
+      <!-- Add Item Section -->
+      <section class="add-item">
+        <h2>Add New Item</h2>
+        <form id="add-item-form">
+          <label for="item-name">Item Name:</label>
+          <input
+            type="text"
+            id="item-name"
+            placeholder="Super Smash Bros Ultimate"
+            required
+          />
+
+          <label for="item-price">Price:</label>
+          <input
+            type="number"
+            id="item-price"
+            placeholder="$59.99"
+            required
+          />
+
+          <label for="item-image">Image URL:</label>
+          <input
+            type="text"
+            id="item-image"
+            placeholder="https://smashbrosultimate.com/image.jpg"
+            required
+          />
+
+          <label for="item-category">Category:</label>
+          <input
+            type="text"
+            id="item-category"
+            placeholder="Fighting"
+            required
+          />
+
+          <label for="item-stock">Stock:</label>
+          <input
+            type="number"
+            id="item-stock"
+            placeholder="10"
+            required
+          />
+
+          <label for="item-rating">Rating (0-5):</label>
+          <input
+            type="number"
+            id="item-rating"
+            placeholder="5"
+            required
+          />
+
+          <button type="submit">Add Item</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 MyStore.com. All rights reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
