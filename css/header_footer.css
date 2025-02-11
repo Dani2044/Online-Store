@@ -155,7 +155,6 @@ main {
 .item-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .item-card {
